@@ -1,394 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Tarunkumaran | Embedded Systems Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
 body{
-    font-family:'Poppins',sans-serif;
+    margin:0;
+    font-family:Arial, sans-serif;
     background:#0f172a;
     color:white;
-    line-height:1.6;
 }
 
-/* NAVBAR */
-
-nav{
-    position:sticky;
-    top:0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#111827;
-    z-index:1000;
-}
-
-nav h1{
-    color:#38bdf8;
-    font-size:28px;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
-}
-
-nav a{
-    text-decoration:none;
-    color:white;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#38bdf8;
-}
-
-/* HERO SECTION */
-
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+header{
+    padding:60px;
     text-align:center;
-    padding:20px;
+    background:#111827;
 }
 
-.hero h2{
-    font-size:60px;
-    margin-bottom:20px;
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-.hero span{
-    color:#38bdf8;
-}
-
-.hero p{
-    max-width:700px;
+header p{
     color:#94a3b8;
-    margin-bottom:30px;
     font-size:18px;
 }
 
-.hero-buttons{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:14px 28px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.primary-btn{
-    background:#38bdf8;
-    color:black;
-}
-
-.secondary-btn{
-    border:2px solid #38bdf8;
-    color:#38bdf8;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-/* SECTION */
-
 section{
-    padding:90px 10%;
+    padding:40px;
+    max-width:1000px;
+    margin:auto;
 }
-
-.section-title{
-    font-size:38px;
-    color:#38bdf8;
-    margin-bottom:40px;
-}
-
-/* CARD */
 
 .card{
     background:#1e293b;
-    padding:35px;
-    border-radius:20px;
+    padding:25px;
+    border-radius:15px;
     margin-bottom:25px;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-}
-
-/* SKILLS */
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.skill{
-    background:#334155;
-    padding:12px 20px;
-    border-radius:12px;
-}
-
-/* PROJECTS */
-
-.project-title{
-    font-size:26px;
-    margin-bottom:15px;
-}
-
-.project-link{
-    display:inline-block;
-    margin-top:15px;
-    text-decoration:none;
+h2{
     color:#38bdf8;
-    font-weight:600;
 }
 
-/* CONTACT */
-
-.contact p{
-    margin-bottom:12px;
+a{
+    color:#38bdf8;
+    text-decoration:none;
 }
 
-/* FOOTER */
+.skills span{
+    display:inline-block;
+    background:#334155;
+    padding:10px 15px;
+    margin:8px;
+    border-radius:10px;
+}
 
 footer{
     text-align:center;
-    padding:25px;
-    background:#111827;
+    padding:20px;
     color:#94a3b8;
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero h2{
-    font-size:40px;
-}
-
-nav{
-    flex-direction:column;
-    gap:15px;
-}
-
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero-buttons{
-    justify-content:center;
-}
-
+button{
+    background:#38bdf8;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
+    <h1>TARUNKUMARAN P</h1>
+    <p>Embedded Systems & IoT Enthusiast</p>
+</header>
 
-<nav>
+<section>
 
-<h1>TK</h1>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-<!-- HERO -->
-
-<div class="hero">
-
-<h2>
-Hi, I'm <span>Tarunkumaran</span>
-</h2>
+<div class="card">
+<h2>About Me</h2>
 
 <p>
 Final-year Electrical and Electronics Engineering student passionate about Embedded Systems, IoT, wireless communication, and hardware-software integration.
 </p>
 
-<div class="hero-buttons">
-
-<a class="btn primary-btn"
-href="PASTE_RESUME_LINK_HERE">
-View Resume
-</a>
-
-<a class="btn secondary-btn"
-href="https://github.com/tarunkumaran9606-git">
-GitHub
-</a>
-
 </div>
-
-</div>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<h2 class="section-title">
-About Me
-</h2>
 
 <div class="card">
-
-<p>
-I am an Embedded Systems and IoT enthusiast focused on building practical electronics projects using ESP32, LoRa, and sensor integration technologies. My interests include wireless communication systems, real-time embedded applications, and hardware-software integration.
-</p>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-<h2 class="section-title">
-Technical Skills
-</h2>
+<h2>Technical Skills</h2>
 
 <div class="skills">
-
-<div class="skill">ESP32</div>
-<div class="skill">Embedded C</div>
-<div class="skill">LoRa</div>
-<div class="skill">UART</div>
-<div class="skill">SPI</div>
-<div class="skill">I2C</div>
-<div class="skill">RTOS</div>
-<div class="skill">Arduino IDE</div>
-<div class="skill">GitHub</div>
-<div class="skill">CAN</div>
+<span>ESP32</span>
+<span>Embedded C</span>
+<span>LoRa</span>
+<span>UART</span>
+<span>SPI</span>
+<span>I2C</span>
+<span>RTOS</span>
+<span>Arduino IDE</span>
+</div>
 
 </div>
 
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-<h2 class="section-title">
-Projects
-</h2>
-
 <div class="card">
 
-<h3 class="project-title">
-Covert Command System
-</h3>
+<h2>Projects</h2>
+
+<h3>Covert Command System</h3>
 
 <p>
-Gesture-controlled wireless communication system developed using ESP32, LoRa modules, and MPU6050 sensors for covert command transmission and long-range embedded communication applications.
+Gesture-controlled wireless communication system using ESP32, LoRa, and MPU6050.
 </p>
 
-<a class="project-link"
-href="PASTE_GITHUB_PROJECT_LINK_HERE">
-
-View GitHub Repository →
-
+<a href="PASTE_GITHUB_LINK_HERE">
+View GitHub Repository
 </a>
 
 </div>
 
 <div class="card">
 
-<h3 class="project-title">
-Wearable Health Monitoring System
-</h3>
+<h2>Resume</h2>
 
 <p>
-Currently developing a wearable health-monitoring system using ESP32 and MAX30102 for real-time physiological parameter monitoring and embedded sensor interfacing.
+Download my latest resume below.
 </p>
+
+<button>Resume Coming Soon</button>
 
 </div>
 
-</section>
+<div class="card">
 
-<!-- CONTACT -->
+<h2>Contact</h2>
 
-<section id="contact">
-
-<h2 class="section-title">
-Contact
-</h2>
-
-<div class="card contact">
+<p>Email: tarunkumaran9606@gmail.com</p>
 
 <p>
-📧 Email:
-<a href="mailto:tarunkumaran9606@gmail.com">
-tarunkumaran9606@gmail.com
-</a>
-</p>
-
-<p>
-💼 LinkedIn:
 <a href="https://linkedin.com/in/tarunkumaran9606/">
-linkedin.com/in/tarunkumaran9606/
-</a>
-</p>
-
-<p>
-💻 GitHub:
-<a href="https://github.com/tarunkumaran9606-git">
-github.com/tarunkumaran9606-git
+LinkedIn Profile
 </a>
 </p>
 
 </div>
 
 </section>
-
-<!-- FOOTER -->
 
 <footer>
-
-<p>
-© 2026 Tarunkumaran P | Embedded Systems Portfolio
-</p>
-
+© 2026 Tarunkumaran P
 </footer>
 
 </body>
